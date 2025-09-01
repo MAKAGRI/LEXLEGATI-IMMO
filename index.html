@@ -1,34 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAP - Facility KG</title>
-    <style>
-        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;}
-        header {background-color: #2c3e50; color: #fff; padding: 20px 0; text-align: center;}
-        section {padding: 40px; text-align: center;}
-        footer {background-color: #2c3e50; color: #fff; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;}
-        a {color: #3498db; text-decoration: none;}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEXLEGATI IMMO</title>
+  <style>
+    :root{
+      --blue:#1e90ff;
+      --gray:#f5f5f5;
+      --dark:#0f1720;
+      --card:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--gray);color:#222;}
+    header{background:var(--blue);color:#fff;text-align:center;padding:28px;border-bottom:4px solid #0b4c9c;}
+    header h1{margin:0;font-size:2.5em}
+    header p{margin:6px 0 0;font-size:1.1em}
+    nav{background:var(--dark);text-align:center;padding:12px}
+    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+    nav a:hover{color:#ddd}
+    .hero{display:flex;justify-content:center;align-items:center;padding:30px;background:#eaf2ff}
+    .hero img{max-width:950px;width:95%;border-radius:12px;border:4px solid var(--blue)}
+    .section{max-width:1100px;margin:20px auto;background:var(--card);padding:22px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+    .section h2{margin:0 0 12px;color:var(--blue)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    ul{line-height:1.8}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+    .gallery img{width:100%;border-radius:10px;border:2px solid #ccc}
+    footer{background:var(--dark);color:#fff;text-align:center;padding:18px;margin-top:24px;border-top:4px solid var(--blue)}
+    .cta{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--blue);color:#fff;padding:12px 16px;border-radius:8px;text-decoration:none;font-weight:bold}
+    .btn.secondary{background:#555}
+  </style>
 </head>
 <body>
-    <header>
-        <h1>CAP - Facility KG</h1>
-        <p>Professional Facility Management Solutions</p>
-    </header>
 
-    <section>
-        <h2>About Us</h2>
-        <p>CAP - Facility KG is dedicated to providing top-notch facility management services across Germany. Based in Hamburg, we ensure quality, reliability, and professionalism in every project we handle.</p>
-        <h3>Contact Information</h3>
-        <p><strong>Address:</strong> Marlowring 26, 22525 Hamburg, Germany</p>
-        <p><strong>Email:</strong> <a href="mailto:bortos@cap-facilitykg.shop">bortos@cap-facilitykg.shop</a></p>
-    </section>
+  <header>
+    <h1>LEXLEGATI IMMO</h1>
+    <p>Real Estate & Property Management • Belfort, France</p>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 CAP - Facility KG. All rights reserved.</p>
-    </footer>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img src="https://avatars.mds.yandex.net/i?id=851ed0d406737ec1532981b64d8c1ded33fa5b06-16204729-images-thumbs&n=13" alt="Real Estate Hero">
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="two-col">
+      <p><strong>LEXLEGATI IMMO</strong> is a professional real estate company based in Belfort, France. We provide brokerage, property rental, and management services with transparency and trust.</p>
+      <p>Our office is located at <strong>2 PL D ARMES 90000, Belfort, Bourgogne Franche Comté</strong>. We are here to guide you through your real estate projects.</p>
+    </div>
+    <div class="cta">
+      <a href="tel:+33745465941" class="btn">📞 Call: +33 7 45 46 59 41</a>
+      <a href="mailto:admin@strinc.shop" class="btn secondary">✉ Email: admin@strinc.shop</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Real Estate Brokerage</li>
+      <li>Property Rentals & Leasing</li>
+      <li>Property Management</li>
+      <li>Real Estate Consulting</li>
+      <li>Investment Advisory</li>
+    </ul>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://avatars.mds.yandex.net/i?id=354779122a37db0f373a25766bec1405b189ff29-8554591-images-thumbs&n=13" alt="Property 1">
+      <img src="https://avatars.mds.yandex.net/i?id=5512c118dc9913a7b9cd1b0632a81a2f783d6af2-5878985-images-thumbs&n=13" alt="Property 2">
+      <img src="https://avatars.mds.yandex.net/i?id=1522e9625547e1210680c7a02751a6a55962d286-16110459-images-thumbs&n=13" alt="Property 3">
+      <img src="https://avatars.mds.yandex.net/i?id=4784b91749833b287bf38676fc3c2899beda8414-5232792-images-thumbs&n=13" alt="Property 4">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="two-col">
+      <div>
+        <p>📍 <strong>Address:</strong> 2 PL D ARMES 90000, Belfort, Bourgogne Franche Comté, France</p>
+        <p>☎ <strong>Phone:</strong> +33 7 45 46 59 41</p>
+        <p>✉ <strong>Email:</strong> <a href="mailto:admin@strinc.shop">admin@strinc.shop</a></p>
+      </div>
+      <div>
+        <p><em>Office Hours</em></p>
+        <ul>
+          <li>Mon–Fri: 9:00–18:00</li>
+          <li>Sat: 10:00–14:00</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LEXLEGATI IMMO — Real Estate & Property Management</p>
+  </footer>
+
 </body>
 </html>
